@@ -40,7 +40,8 @@ Reveals limited cross-taxa knowledge transfer (~3–4%)
 Identifies conserved functional core and divergent mechanisms
 Shows that naïve data integration can reduce predictive performance
 
-##📂 Repository Structure
+## Repository Structure
+
 STX-LBD/
 │
 ├── data/
@@ -70,17 +71,23 @@ STX-LBD/
 ├── run_pipeline.sh
 └── README.md
 
-##🔁 Reproducibility
+## Reproducibility
+
 1. Clone the repository
+
 git clone https://github.com/buharilawan20-prog/STX-LBD.git
 cd STX-LBD
+
 2. Create the environment
+
 conda env create -f environment.yml
 conda activate stx_ai
+
 3. Run the pipeline
+
 bash run_pipeline.sh
 
-##📊 Outputs
+## Outputs
 
 Running the pipeline generates:
 
@@ -95,13 +102,13 @@ Outputs are saved in:
 results/
 figures/
 
-##📂 Data
+## Data
 
 Processed datasets used in this study are included in the repository.
 
 Raw literature data can be retrieved from PubMed using the provided scripts.
 
-##🧪 Methods Summary
+## Methods Summary
 
 The workflow consists of:
 
@@ -114,7 +121,7 @@ Machine learning ranking
 Temporal validation
 Cross-taxa transfer analysis
 
-##🧠 Model Overview
+## Model Overview
 
 Candidate node pairs are scored using:
 
@@ -124,7 +131,7 @@ Embedding similarity (node2vec)
 
 Final ranking is obtained using machine learning models.
 
-##🌍 Significance
+## Significance
 
 This study demonstrates that AI-driven knowledge graph approaches can:
 
@@ -133,15 +140,15 @@ Reveal conserved and divergent mechanisms across taxa
 Identify limitations in cross-domain knowledge transfer
 Support predictive understanding of harmful algal bloom dynamics
 
-##📌 Code Availability
+## Code Availability
 
 All scripts, processed data, and analysis workflows are publicly available in this repository.
 
-##📄 Status
+## Status
 
 This repository accompanies a manuscript currently under review.
 
-##📬 Contact
+## Contact
 
 For questions or collaboration:
 
