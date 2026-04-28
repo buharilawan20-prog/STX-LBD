@@ -40,8 +40,7 @@ Reveals limited cross-taxa knowledge transfer (~3–4%)
 Identifies conserved functional core and divergent mechanisms
 Shows that naïve data integration can reduce predictive performance
 
-## Repository Structure
-
+📂 Repository Structure
 STX-LBD/
 │
 ├── data/
@@ -71,6 +70,7 @@ STX-LBD/
 ├── run_pipeline.sh
 └── README.md
 
+
 ## Reproducibility
 
 1. Clone the repository
@@ -91,11 +91,11 @@ bash run_pipeline.sh
 
 Running the pipeline generates:
 
-AI-scored hypotheses
-Temporal validation results
-Cross-taxa transfer analysis
-Combined model evaluation
-Publication-ready figures (PNG/PDF)
+- AI-scored hypotheses
+- Temporal validation results
+- Cross-taxa transfer analysis
+- Combined model evaluation
+- Publication-ready figures (PNG/PDF)
 
 Outputs are saved in:
 
@@ -112,22 +112,22 @@ Raw literature data can be retrieved from PubMed using the provided scripts.
 
 The workflow consists of:
 
-Literature collection and preprocessing
-Entity extraction and semantic enrichment
-Knowledge graph construction
-Hypothesis generation (link prediction)
-Feature extraction (structural + embedding)
-Machine learning ranking
-Temporal validation
-Cross-taxa transfer analysis
+- Literature collection and preprocessing
+- Entity extraction and semantic enrichment
+- Knowledge graph construction
+- Hypothesis generation (link prediction)
+- Feature extraction (structural + embedding)
+- Machine learning ranking
+- Temporal validation
+- Cross-taxa transfer analysis
 
 ## Model Overview
 
 Candidate node pairs are scored using:
 
-Structural graph features (common neighbors, Adamic–Adar, etc.)
-Biological signals (STX, environmental drivers, evolution)
-Embedding similarity (node2vec)
+- Structural graph features (common neighbors, Adamic–Adar, etc.)
+- Biological signals (STX, environmental drivers, evolution)
+- Embedding similarity (node2vec)
 
 Final ranking is obtained using machine learning models.
 
@@ -135,10 +135,10 @@ Final ranking is obtained using machine learning models.
 
 This study demonstrates that AI-driven knowledge graph approaches can:
 
-Predict toxin-related biological relationships
-Reveal conserved and divergent mechanisms across taxa
-Identify limitations in cross-domain knowledge transfer
-Support predictive understanding of harmful algal bloom dynamics
+- Predict toxin-related biological relationships
+- Reveal conserved and divergent mechanisms across taxa
+- Identify limitations in cross-domain knowledge transfer
+- Support predictive understanding of harmful algal bloom dynamics
 
 ## Code Availability
 
@@ -152,6 +152,6 @@ This repository accompanies a manuscript currently under review.
 
 For questions or collaboration:
 
-Buhari Lawan Muhammad PhD
-Research professor, SangMyung University
-buharilawan20@gmail.com
+- Buhari Lawan Muhammad PhD
+- Research professor, SangMyung University
+- buharilawan20@gmail.com
