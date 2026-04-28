@@ -40,7 +40,7 @@ Reveals limited cross-taxa knowledge transfer (~3–4%)
 Identifies conserved functional core and divergent mechanisms
 Shows that naïve data integration can reduce predictive performance
 
-📂 Repository Structure
+```## Repository Structure
 STX-LBD/
 │
 ├── data/
@@ -69,6 +69,7 @@ STX-LBD/
 ├── environment.yml
 ├── run_pipeline.sh
 └── README.md
+```
 
 
 ## Reproducibility
