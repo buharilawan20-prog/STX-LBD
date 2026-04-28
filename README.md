@@ -40,7 +40,9 @@ Reveals limited cross-taxa knowledge transfer (~3–4%)
 Identifies conserved functional core and divergent mechanisms
 Shows that naïve data integration can reduce predictive performance
 
-```## Repository Structure
+## Repository Structure
+```
+
 STX-LBD/
 │
 ├── data/
@@ -76,18 +78,19 @@ STX-LBD/
 
 1. Clone the repository
 
+```
 git clone https://github.com/buharilawan20-prog/STX-LBD.git
 cd STX-LBD
-
+```
 2. Create the environment
-
+```
 conda env create -f environment.yml
 conda activate stx_ai
-
+```
 3. Run the pipeline
-
+```
 bash run_pipeline.sh
-
+```
 ## Outputs
 
 Running the pipeline generates:
