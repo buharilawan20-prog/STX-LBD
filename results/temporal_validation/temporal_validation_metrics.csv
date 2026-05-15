@@ -1,0 +1,14 @@
+﻿Metric,Value
+Hits@10,7.0
+Precision@10,0.7
+Hits@20,13.0
+Precision@20,0.65
+Hits@50,22.0
+Precision@50,0.44
+Hits@100,37.0
+Precision@100,0.37
+Hits@200,67.0
+Precision@200,0.335
+Total_Predictions,386.0
+Total_Future_Matches,98.0
+Overall_Precision,0.2538860103626943

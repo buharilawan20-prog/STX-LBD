@@ -1,0 +1,19 @@
+name: stx_ai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - numpy=1.26.4
+  - scipy
+  - networkx
+  - scikit-learn
+  - matplotlib
+  - gensim
+  - joblib
+  - tqdm
+  - pillow
+  - pip:
+      - node2vec==0.5.0
