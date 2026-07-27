@@ -1,0 +1,9 @@
+﻿figure,description
+01_corpus_temporal_split.png,"Corpus distribution across dinoflagellate pre-2016, dinoflagellate post-2015, and cyanobacterial corpus."
+02_dino_pre2016_kg.png,Top weighted dinoflagellate pre-2016 semantic KG.
+03_dino_post2015_kg.png,Top weighted dinoflagellate post-2015 semantic KG.
+04_cyano_semantic_kg.png,Top weighted cyanobacterial STX semantic KG.
+05_conserved_vs_divergent_edges.png,Conserved and divergent semantic edges between cyanobacteria and dinoflagellates.
+06_cross_taxa_transfer_categories.png,Categories of post-2015 dinoflagellate edges supported by cyanobacterial and/or pre-2016 dinoflagellate prior knowledge.
+07_node2vec_vs_ai_precision.png,Precision@K comparison between Node2Vec ranking and supervised AI ranking.
+08_strict_temporal_precision_at_k.png,Strict temporal validation Precision@K for Node2Vec-ranked pre-2016 hypotheses.

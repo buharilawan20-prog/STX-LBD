@@ -1,0 +1,11 @@
+﻿Method,Score_Column,K,Hits@K,Precision@K,Recall@K
+Node2Vec,Node2Vec_Integrated_Score,10,2,0.2,0.014814814814814815
+Node2Vec,Node2Vec_Integrated_Score,20,8,0.4,0.05925925925925926
+Node2Vec,Node2Vec_Integrated_Score,50,25,0.5,0.18518518518518517
+Node2Vec,Node2Vec_Integrated_Score,100,45,0.45,0.3333333333333333
+Node2Vec,Node2Vec_Integrated_Score,200,75,0.375,0.5555555555555556
+AI_Ranker,Final_AI_Rank_Score,10,10,1.0,0.07407407407407407
+AI_Ranker,Final_AI_Rank_Score,20,19,0.95,0.14074074074074075
+AI_Ranker,Final_AI_Rank_Score,50,46,0.92,0.34074074074074073
+AI_Ranker,Final_AI_Rank_Score,100,89,0.89,0.6592592592592592
+AI_Ranker,Final_AI_Rank_Score,200,120,0.6,0.8888888888888888

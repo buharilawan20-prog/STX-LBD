@@ -1,0 +1,50 @@
+panel,network,node,entity_type,degree,weighted_degree
+A,pre2016_dino,dinoflagellate,DINO_TAXON,47,2074.0
+A,pre2016_dino,alexandrium,DINO_TAXON,41,1537.0
+A,pre2016_dino,saxitoxin,TOXIN,37,1377.0
+A,pre2016_dino,paralytic_shellfish_poisoning,TOXIN,30,1120.0
+A,pre2016_dino,paralytic_shellfish_toxins,TOXIN,19,727.0
+A,pre2016_dino,toxicity,BIOLOGICAL_PROCESS,23,718.0
+A,pre2016_dino,stx,TOXIN,12,489.0
+A,pre2016_dino,hplc,DETECTION_METHOD,9,334.0
+A,pre2016_dino,alexandrium tamarense,DINO_TAXON,8,318.0
+A,pre2016_dino,gymnodinium,DINO_TAXON,6,294.0
+A,pre2016_dino,bloom,ENV_FACTOR,8,291.0
+A,pre2016_dino,gymnodinium catenatum,DINO_TAXON,6,266.0
+A,pre2016_dino,toxin production,BIOLOGICAL_PROCESS,9,219.0
+A,pre2016_dino,cyanobacteria,CYANO_TAXON,9,210.0
+A,pre2016_dino,alexandrium minutum,DINO_TAXON,6,180.0
+A,pre2016_dino,mouse_bioassay,DETECTION_METHOD,6,170.0
+A,pre2016_dino,gonyautoxin,TOXIN,6,167.0
+A,pre2016_dino,biosynthesis,BIOLOGICAL_PROCESS,10,157.0
+A,pre2016_dino,pyrodinium,DINO_TAXON,6,147.0
+A,pre2016_dino,nutrient,ENV_FACTOR,8,131.0
+A,pre2016_dino,pyrodinium bahamense,DINO_TAXON,6,131.0
+A,pre2016_dino,neosaxitoxin,TOXIN,6,129.0
+A,pre2016_dino,gtx,TOXIN,6,115.0
+A,pre2016_dino,alexandrium fundyense,DINO_TAXON,6,109.0
+A,pre2016_dino,alexandrium catenella,DINO_TAXON,6,105.0
+A,pre2016_dino,expression,BIOLOGICAL_PROCESS,6,102.0
+A,pre2016_dino,temperature,ENV_FACTOR,6,97.0
+A,pre2016_dino,sxta,SXT_GENE,6,96.0
+A,pre2016_dino,phylogenetic,BIOLOGICAL_PROCESS,6,89.0
+A,pre2016_dino,nitrogen,ENV_FACTOR,6,86.0
+A,pre2016_dino,light,ENV_FACTOR,6,85.0
+A,pre2016_dino,mass_spectrometry,DETECTION_METHOD,6,84.0
+A,pre2016_dino,nitrate,ENV_FACTOR,6,75.0
+A,pre2016_dino,salinity,ENV_FACTOR,6,65.0
+A,pre2016_dino,evolution,BIOLOGICAL_PROCESS,5,56.0
+A,pre2016_dino,alexandrium ostenfeldii,DINO_TAXON,5,48.0
+A,pre2016_dino,phosphorus,ENV_FACTOR,4,45.0
+A,pre2016_dino,regulation,BIOLOGICAL_PROCESS,3,38.0
+A,pre2016_dino,saxitoxin biosynthesis,BIOLOGICAL_PROCESS,4,36.0
+A,pre2016_dino,gene expression,BIOLOGICAL_PROCESS,3,35.0
+A,pre2016_dino,nutrients,ENV_FACTOR,3,30.0
+A,pre2016_dino,phylogeny,BIOLOGICAL_PROCESS,3,30.0
+A,pre2016_dino,phosphate,ENV_FACTOR,3,29.0
+A,pre2016_dino,anabaena,CYANO_TAXON,3,28.0
+A,pre2016_dino,toxin biosynthesis,BIOLOGICAL_PROCESS,3,27.0
+A,pre2016_dino,lc_ms,DETECTION_METHOD,3,26.0
+A,pre2016_dino,harmful algal bloom,ENV_FACTOR,2,22.0
+A,pre2016_dino,alexandrium tamiyavanichii,DINO_TAXON,2,14.0
+A,pre2016_dino,aphanizomenon,CYANO_TAXON,2,14.0

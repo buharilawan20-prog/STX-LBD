@@ -1,0 +1,11 @@
+﻿Query,Relationship Type,AI Score,Evidence (Papers),Validation Status,Biological Interpretation
+cyanobacteria - sxtA,OTHER_STX_HYPOTHESIS,NA,0,Not in generated candidate space,Represents a biologically plausible STX-related relationship requiring targeted validation.
+warming - STX biosynthesis,ENV_MECHANISM_HYPOTHESIS,0.263,0,Not recovered in post-2015 literature,Indicates warming may shape STX biosynthesis and STX production dynamics.
+Gymnodinium catenatum - sxtA,TAXON_GENE_HYPOTHESIS,NA,0,Not in generated candidate space,Suggests a species- or lineage-specific association between Gymnodinium catenatum and sxtA.
+light - sxtG,ENV_GENE_HYPOTHESIS,0.573,1,Recovered in post-2015 literature,Suggests light may regulate sxtG-associated STX biosynthesis and toxin production dynamics.
+salinity - sxt genes,ENV_GENE_HYPOTHESIS,0.227,1,Recovered in post-2015 literature,Suggests salinity may regulate sxt genes-associated STX biosynthesis and toxin production dynamics.
+phosphate - sxtU,ENV_GENE_HYPOTHESIS,0.102,1,Recovered in post-2015 literature,Suggests phosphate may regulate sxtU-associated STX biosynthesis and toxin production dynamics.
+gene expression - toxin biosynthesis,OTHER_STX_HYPOTHESIS,0.552,1,Recovered in post-2015 literature,Represents a biologically plausible STX-related relationship requiring targeted validation.
+bloom - STX biosynthesis,OTHER_STX_HYPOTHESIS,0.674,4,Recovered in post-2015 literature,Represents a biologically plausible STX-related relationship requiring targeted validation.
+Alexandrium catenella - sxtG,TAXON_GENE_HYPOTHESIS,0.651,4,Recovered in post-2015 literature,Suggests a species- or lineage-specific association between Alexandrium catenella and sxtG.
+Alexandrium pacificum - sxtA,TAXON_GENE_HYPOTHESIS,NA,0,Not in generated candidate space,Suggests a species- or lineage-specific association between Alexandrium pacificum and sxtA.

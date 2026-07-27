@@ -1,0 +1,41 @@
+STX-LBD CORPUS EXPANSION AND AI HYPOTHESIS GENERATION SUMMARY
+======================================================================
+
+Pipeline components:
+          component                                                                                                                       file  records  columns
+      master_corpus                            /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/data/processed/stx_enriched_master_corpus_FINAL.csv     1749       38
+       dino_pre2016                                        /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/splits/dino_pre2016.csv      519       38
+      dino_post2015                                       /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/splits/dino_post2015.csv      355       38
+          cyano_all                                           /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/splits/cyano_all.csv      695       38
+           entities           /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/processed/all_split_entities_combined_normalized.csv     9918       11
+     combined_edges                        /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/kg/combined_enriched_semantic_edges.csv     5209       10
+priority_hypotheses                 /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/processed/dino_pre2016_priority_hypotheses.csv      514       23
+    node2vec_scored /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/processed/dino_pre2016_priority_hypotheses_node2vec_scored.csv      514       30
+          ai_ranked                       /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/ml/dino_pre2016_hypotheses_ai_ranked.csv      514       32
+     strict_metrics                      /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/ml/strict_temporal_validation_metrics.csv        6        4
+ comparison_metrics                       /home/bhlabos/LBD/New/STX_CORPUS_ENRICHMENT/FINAL_WORKSPACE/ml/node2vec_vs_ai_comparison_metrics.csv       10        6
+
+Strict temporal validation metrics:
+  K  Hits@K  Precision@K  Recall@K
+ 10       2        0.200  0.014815
+ 20       8        0.400  0.059259
+ 50      25        0.500  0.185185
+100      45        0.450  0.333333
+200      75        0.375  0.555556
+500     135        0.270  1.000000
+
+Node2Vec vs supervised AI ranking comparison:
+   Method              Score_Column   K  Hits@K  Precision@K  Recall@K
+ Node2Vec Node2Vec_Integrated_Score  10       2        0.200  0.014815
+ Node2Vec Node2Vec_Integrated_Score  20       8        0.400  0.059259
+ Node2Vec Node2Vec_Integrated_Score  50      25        0.500  0.185185
+ Node2Vec Node2Vec_Integrated_Score 100      45        0.450  0.333333
+ Node2Vec Node2Vec_Integrated_Score 200      75        0.375  0.555556
+AI_Ranker       Final_AI_Rank_Score  10      10        1.000  0.074074
+AI_Ranker       Final_AI_Rank_Score  20      19        0.950  0.140741
+AI_Ranker       Final_AI_Rank_Score  50      46        0.920  0.340741
+AI_Ranker       Final_AI_Rank_Score 100      89        0.890  0.659259
+AI_Ranker       Final_AI_Rank_Score 200     120        0.600  0.888889
+
+Suggested interpretation:
+The enriched STX-LBD framework integrates multidatabase corpus harvesting, manual corpus recovery, semantic normalization, n-gram phrase mining, knowledge graph construction, Node2Vec embeddings, temporal validation, and supervised AI ranking. Strict temporal validation evaluates pre-2016 predictions against post-2015 literature without additional supervised training, while the AI ranker represents supervised temporal prioritization.

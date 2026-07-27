@@ -1,0 +1,78 @@
+﻿Entity,Entity_Type,Entity_Normalized,Relationship_Count
+biosynthesis,BIOLOGICAL_PROCESS,biosynthesis,1
+bloom_dynamics,BIOLOGICAL_PROCESS,bloom dynamics,12
+environmental_regulation,BIOLOGICAL_PROCESS,environmental regulation,11
+evolution,BIOLOGICAL_PROCESS,evolution,6
+expression,BIOLOGICAL_PROCESS,expression,4
+gene_duplication,BIOLOGICAL_PROCESS,gene duplication,9
+gene_expression,BIOLOGICAL_PROCESS,gene expression,7
+gene_loss,BIOLOGICAL_PROCESS,gene loss,12
+horizontal_gene_transfer,BIOLOGICAL_PROCESS,horizontal gene transfer,7
+phylogenetic,BIOLOGICAL_PROCESS,phylogenetic,2
+phylogeny,BIOLOGICAL_PROCESS,phylogeny,3
+polyketide_synthase,BIOLOGICAL_PROCESS,polyketide synthase,11
+regulation,BIOLOGICAL_PROCESS,regulation,8
+resting_cyst,BIOLOGICAL_PROCESS,resting cyst,9
+saxitoxin_biosynthesis,BIOLOGICAL_PROCESS,saxitoxin biosynthesis,5
+secondary_metabolism,BIOLOGICAL_PROCESS,secondary metabolism,12
+toxicity,BIOLOGICAL_PROCESS,toxicity,4
+toxin_biosynthesis,BIOLOGICAL_PROCESS,toxin biosynthesis,5
+toxin_production,BIOLOGICAL_PROCESS,toxin production,4
+transcription,BIOLOGICAL_PROCESS,transcription,9
+transcriptome,BIOLOGICAL_PROCESS,transcriptome,6
+transcriptomic,BIOLOGICAL_PROCESS,transcriptomic,10
+anabaena,CYANO_TAXON,anabaena,15
+aphanizomenon,CYANO_TAXON,aphanizomenon,18
+cyanobacteria,CYANO_TAXON,cyanobacteria,5
+cyanobacterial,CYANO_TAXON,cyanobacterial,6
+cyanobacterium,CYANO_TAXON,cyanobacterium,14
+cylindrospermopsis,CYANO_TAXON,cylindrospermopsis,16
+lyngbya,CYANO_TAXON,lyngbya,19
+planktothrix,CYANO_TAXON,planktothrix,20
+scytonema,CYANO_TAXON,scytonema,19
+alexandrium,DINO_TAXON,alexandrium,4
+alexandrium_affine,DINO_TAXON,alexandrium affine,20
+alexandrium_catenella,DINO_TAXON,alexandrium catenella,12
+alexandrium_fundyense,DINO_TAXON,alexandrium fundyense,13
+alexandrium_leei,DINO_TAXON,alexandrium leei,19
+alexandrium_minutum,DINO_TAXON,alexandrium minutum,10
+alexandrium_ostenfeldii,DINO_TAXON,alexandrium ostenfeldii,16
+alexandrium_tamarense,DINO_TAXON,alexandrium tamarense,10
+alexandrium_tamiyavanichii,DINO_TAXON,alexandrium tamiyavanichii,15
+dinoflagellate,DINO_TAXON,dinoflagellate,4
+gymnodinium,DINO_TAXON,gymnodinium,4
+gymnodinium_catenatum,DINO_TAXON,gymnodinium catenatum,8
+protoceratium,DINO_TAXON,protoceratium,20
+protoceratium_reticulatum,DINO_TAXON,protoceratium reticulatum,20
+pyrodinium,DINO_TAXON,pyrodinium,6
+pyrodinium_bahamense,DINO_TAXON,pyrodinium bahamense,11
+bloom,ENV_FACTOR,bloom,3
+climate,ENV_FACTOR,climate,7
+environmental_stress,ENV_FACTOR,environmental stress,9
+harmful_algal_bloom,ENV_FACTOR,harmful algal bloom,8
+irradiance,ENV_FACTOR,irradiance,10
+light,ENV_FACTOR,light,5
+nitrate,ENV_FACTOR,nitrate,7
+nitrogen,ENV_FACTOR,nitrogen,5
+nitrogen_limitation,ENV_FACTOR,nitrogen limitation,11
+nutrient,ENV_FACTOR,nutrient,4
+nutrients,ENV_FACTOR,nutrients,8
+phosphate,ENV_FACTOR,phosphate,8
+phosphorus,ENV_FACTOR,phosphorus,6
+phosphorus_limitation,ENV_FACTOR,phosphorus limitation,12
+salinity,ENV_FACTOR,salinity,7
+temperature,ENV_FACTOR,temperature,6
+warming,ENV_FACTOR,warming,9
+sxt_genes,SXT_GENE,sxt genes,41
+sxta,SXT_GENE,sxta,20
+sxtb,SXT_GENE,sxtb,53
+sxtd,SXT_GENE,sxtd,59
+sxtg,SXT_GENE,sxtg,36
+sxti,SXT_GENE,sxti,54
+sxtu,SXT_GENE,sxtu,53
+gonyautoxin,TOXIN,gonyautoxin,23
+gtx,TOXIN,gtx,26
+neosaxitoxin,TOXIN,neosaxitoxin,32
+paralytic_shellfish_poisoning,TOXIN,paralytic shellfish poisoning,7
+paralytic_shellfish_toxins,TOXIN,paralytic shellfish toxins,12
+saxitoxin,TOXIN,saxitoxin,6

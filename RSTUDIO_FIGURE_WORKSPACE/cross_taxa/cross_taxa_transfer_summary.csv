@@ -1,0 +1,11 @@
+﻿analysis,count
+cyano_all_edges,1847
+dino_pre2016_edges,1554
+dino_post2015_edges,1732
+dino_all_edges,2178
+cyano_all_vs_dino_all_conserved_edges,1481
+cyano_all_vs_dino_post2015_convergent_edges,1268
+post2015_edges_with_cyano_prior_signal,1268
+post2015_edges_with_dino_pre_prior_signal,1108
+post2015_edges_with_cyano_only_prior_signal,345
+post2015_edges_new_only,279

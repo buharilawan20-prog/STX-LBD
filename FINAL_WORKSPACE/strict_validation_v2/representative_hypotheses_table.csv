@@ -1,0 +1,12 @@
+﻿Group,Representative Hypothesis,Relationship Type,AI Score,Evidence (Papers),Biological Interpretation
+Environmental regulation,nutrients - sxtA,ENV_GENE_HYPOTHESIS,0.575,2,Suggests nutrients may regulate sxtA-associated STX biosynthesis and toxin production dynamics.
+Environmental regulation,light - sxtG,ENV_GENE_HYPOTHESIS,0.573,1,Suggests light may regulate sxtG-associated STX biosynthesis and toxin production dynamics.
+Environmental regulation,nitrate - sxtA,ENV_GENE_HYPOTHESIS,0.541,7,Suggests nitrate may regulate sxtA-associated STX biosynthesis and toxin production dynamics.
+Gene–toxin relationships,GTX - sxt genes,GENE_TOXIN_HYPOTHESIS,0.356,1,"Supports a role of sxt genes-related genes in determining toxin variability, biosynthesis, or toxin analog profiles."
+Gene–toxin relationships,neoSTX - sxt genes,GENE_TOXIN_HYPOTHESIS,0.252,1,"Supports a role of sxt genes-related genes in determining toxin variability, biosynthesis, or toxin analog profiles."
+Evolutionary organization,phylogenetic - sxtb,EVOLUTION_GENE_MECHANISM_HYPOTHESIS,0.224,4,"Suggests evolutionary or phylogenetic processes may shape the organization, conservation, or diversification of STX-related genes and pathways."
+Evolutionary organization,evolution - sxtI,EVOLUTION_GENE_MECHANISM_HYPOTHESIS,0.197,1,"Suggests evolutionary or phylogenetic processes may shape the organization, conservation, or diversification of STX-related genes and pathways."
+Evolutionary organization,evolution - sxtU,EVOLUTION_GENE_MECHANISM_HYPOTHESIS,0.197,1,"Suggests evolutionary or phylogenetic processes may shape the organization, conservation, or diversification of STX-related genes and pathways."
+Biosynthetic mechanisms,GTX - toxin biosynthesis,MECHANISM_TOXIN_PHENOTYPE_HYPOTHESIS,0.599,1,Highlights biosynthetic or regulatory activity as a mechanistic driver linking STX pathway activity with toxin phenotype.
+Biosynthetic mechanisms,GTX - STX biosynthesis,MECHANISM_TOXIN_PHENOTYPE_HYPOTHESIS,0.526,1,Highlights biosynthetic or regulatory activity as a mechanistic driver linking STX pathway activity with toxin phenotype.
+Biosynthetic mechanisms,neoSTX - toxin biosynthesis,MECHANISM_TOXIN_PHENOTYPE_HYPOTHESIS,0.449,1,Highlights biosynthetic or regulatory activity as a mechanistic driver linking STX pathway activity with toxin phenotype.

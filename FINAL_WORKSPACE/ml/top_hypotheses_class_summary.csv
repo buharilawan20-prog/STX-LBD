@@ -1,0 +1,9 @@
+﻿Hypothesis_Class,AI_Top100,Node2Vec_Top100
+cross_taxa_association,12,24
+cyano_gene_transfer_signal,5,8
+environment_gene_regulation,23,17
+environment_toxin_association,2,14
+gene_process_association,26,6
+process_toxin_association,8,21
+taxon_gene_association,15,5
+taxon_toxin_association,9,5

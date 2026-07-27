@@ -1,0 +1,71 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+stx_ai/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Environment variables and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+token.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
+temp/
+tmp/
+
+# Large model files
+*.pkl
+*.joblib
+*.model
+*.bin
+*.npy
+*.npz
+
+# Raw literature and downloaded full text
+data/raw/
+raw_data/
+downloads/
+full_text/
+pdfs/
+
+# Local outputs that can be regenerated
+outputs/
+cache/
+
+# Manuscript temporary files
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/

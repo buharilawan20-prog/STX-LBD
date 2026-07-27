@@ -1,0 +1,17 @@
+﻿Category,Relationship,Outcome,Weight
+Environmental,STX ↔ bloom,Conserved,102.0
+Mechanistic,STX ↔ biosynthesis,Conserved,85.0
+Gene-related,STX ↔ sxtA,Conserved,65.0
+Environmental,bloom ↔ toxicity,Conserved,42.0
+Gene-related,STX ↔ phylogenetic,Conserved,42.0
+Gene-related,STX ↔ expression,Conserved,39.0
+Mechanistic,STX ↔ toxin production,Conserved,39.0
+Environmental,STX ↔ nitrogen,Conserved,37.0
+Environmental,dolichospermum ↔ bloom,Divergent,13.0
+Mechanistic,dolichospermum ↔ biosynthesis,Divergent,13.0
+Mechanistic,toxin production ↔ elisa,Divergent,11.0
+Mechanistic,cylindrospermopsis ↔ toxin production,Divergent,11.0
+Gene-related,expression ↔ toxicity,Divergent,10.0
+Gene-related,sxtA ↔ elisa,Divergent,10.0
+Gene-related,sxt genes ↔ toxin production,Divergent,8.0
+Mechanistic,cylindrospermopsis ↔ toxin biosynthesis,Divergent,8.0

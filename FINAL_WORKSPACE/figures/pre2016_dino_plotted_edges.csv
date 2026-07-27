@@ -1,0 +1,220 @@
+source,target,weight
+dinoflagellate,saxitoxin,216
+alexandrium,dinoflagellate,209
+dinoflagellate,paralytic_shellfish_poisoning,188
+dinoflagellate,paralytic_shellfish_toxins,143
+alexandrium,paralytic_shellfish_poisoning,135
+alexandrium,saxitoxin,124
+paralytic_shellfish_poisoning,saxitoxin,120
+dinoflagellate,toxicity,105
+dinoflagellate,stx,102
+saxitoxin,stx,100
+alexandrium,paralytic_shellfish_toxins,95
+alexandrium,alexandrium tamarense,93
+alexandrium,toxicity,90
+gymnodinium,gymnodinium catenatum,81
+alexandrium,stx,71
+bloom,dinoflagellate,69
+dinoflagellate,hplc,68
+dinoflagellate,gymnodinium,67
+paralytic_shellfish_poisoning,toxicity,67
+alexandrium tamarense,dinoflagellate,65
+paralytic_shellfish_toxins,saxitoxin,65
+saxitoxin,toxicity,65
+paralytic_shellfish_poisoning,stx,61
+dinoflagellate,gymnodinium catenatum,59
+alexandrium,hplc,56
+cyanobacteria,dinoflagellate,55
+alexandrium,alexandrium minutum,53
+alexandrium,bloom,53
+dinoflagellate,toxin production,49
+hplc,saxitoxin,48
+paralytic_shellfish_poisoning,paralytic_shellfish_toxins,48
+paralytic_shellfish_toxins,toxicity,48
+alexandrium,toxin production,47
+bloom,paralytic_shellfish_poisoning,47
+gymnodinium,saxitoxin,46
+stx,toxicity,45
+alexandrium minutum,dinoflagellate,44
+gymnodinium,paralytic_shellfish_toxins,44
+hplc,paralytic_shellfish_poisoning,44
+dinoflagellate,gonyautoxin,42
+bloom,saxitoxin,40
+gymnodinium catenatum,paralytic_shellfish_toxins,40
+gymnodinium catenatum,saxitoxin,39
+alexandrium tamarense,paralytic_shellfish_poisoning,38
+hplc,toxicity,38
+alexandrium tamarense,paralytic_shellfish_toxins,36
+alexandrium tamarense,toxicity,36
+pyrodinium,pyrodinium bahamense,36
+alexandrium tamarense,saxitoxin,35
+cyanobacteria,saxitoxin,35
+dinoflagellate,mouse_bioassay,35
+gonyautoxin,saxitoxin,35
+alexandrium,alexandrium catenella,33
+dinoflagellate,pyrodinium,33
+gymnodinium,paralytic_shellfish_poisoning,33
+bloom,paralytic_shellfish_toxins,32
+hplc,stx,32
+mouse_bioassay,saxitoxin,32
+neosaxitoxin,saxitoxin,32
+alexandrium,alexandrium fundyense,31
+alexandrium minutum,paralytic_shellfish_poisoning,31
+biosynthesis,dinoflagellate,31
+alexandrium,nutrient,30
+bloom,toxicity,29
+pyrodinium,saxitoxin,29
+dinoflagellate,neosaxitoxin,28
+dinoflagellate,nutrient,28
+gymnodinium catenatum,paralytic_shellfish_poisoning,28
+mouse_bioassay,toxicity,28
+cyanobacteria,paralytic_shellfish_poisoning,27
+dinoflagellate,expression,27
+dinoflagellate,gtx,27
+dinoflagellate,pyrodinium bahamense,27
+alexandrium,gonyautoxin,26
+mouse_bioassay,paralytic_shellfish_poisoning,26
+pyrodinium bahamense,saxitoxin,26
+alexandrium,gtx,25
+alexandrium fundyense,dinoflagellate,25
+cyanobacteria,paralytic_shellfish_toxins,25
+dinoflagellate,temperature,25
+hplc,mouse_bioassay,25
+alexandrium,mouse_bioassay,24
+dinoflagellate,phylogenetic,24
+gonyautoxin,paralytic_shellfish_toxins,24
+saxitoxin,toxin production,24
+toxicity,toxin production,24
+alexandrium,gymnodinium,23
+alexandrium catenella,dinoflagellate,23
+dinoflagellate,sxta,23
+paralytic_shellfish_toxins,toxin production,23
+alexandrium,biosynthesis,22
+paralytic_shellfish_poisoning,pyrodinium,22
+saxitoxin,sxta,22
+alexandrium,cyanobacteria,21
+alexandrium,expression,21
+biosynthesis,saxitoxin,21
+dinoflagellate,light,21
+alexandrium,temperature,20
+dinoflagellate,mass_spectrometry,20
+gonyautoxin,neosaxitoxin,20
+gonyautoxin,paralytic_shellfish_poisoning,20
+paralytic_shellfish_poisoning,pyrodinium bahamense,20
+paralytic_shellfish_poisoning,toxin production,20
+alexandrium,sxta,19
+alexandrium minutum,paralytic_shellfish_toxins,19
+dinoflagellate,nitrogen,19
+gymnodinium catenatum,toxicity,19
+alexandrium,light,18
+alexandrium,nitrogen,18
+alexandrium fundyense,saxitoxin,18
+phylogenetic,saxitoxin,18
+alexandrium,nitrate,17
+alexandrium minutum,saxitoxin,17
+biosynthesis,cyanobacteria,17
+gtx,toxicity,17
+mass_spectrometry,saxitoxin,17
+neosaxitoxin,paralytic_shellfish_toxins,17
+neosaxitoxin,stx,17
+saxitoxin,temperature,17
+alexandrium minutum,toxicity,16
+biosynthesis,paralytic_shellfish_toxins,16
+dinoflagellate,nitrate,16
+dinoflagellate,regulation,16
+dinoflagellate,salinity,16
+evolution,saxitoxin,16
+gtx,saxitoxin,16
+mass_spectrometry,paralytic_shellfish_poisoning,16
+nitrogen,nutrient,16
+alexandrium,phylogenetic,15
+alexandrium,regulation,15
+alexandrium catenella,paralytic_shellfish_poisoning,15
+dinoflagellate,evolution,15
+expression,saxitoxin,15
+gtx,hplc,15
+gtx,stx,15
+light,saxitoxin,15
+neosaxitoxin,paralytic_shellfish_poisoning,15
+paralytic_shellfish_poisoning,phylogenetic,15
+alexandrium,mass_spectrometry,14
+alexandrium catenella,saxitoxin,14
+nutrient,paralytic_shellfish_toxins,14
+pyrodinium,stx,14
+temperature,toxicity,14
+alexandrium,alexandrium ostenfeldii,13
+alexandrium fundyense,toxicity,13
+expression,gene expression,13
+expression,paralytic_shellfish_poisoning,13
+expression,paralytic_shellfish_toxins,13
+nutrient,phosphorus,13
+paralytic_shellfish_toxins,pyrodinium,13
+alexandrium,phosphorus,12
+alexandrium catenella,paralytic_shellfish_toxins,12
+biosynthesis,paralytic_shellfish_poisoning,12
+light,toxin production,12
+nitrate,toxicity,12
+nutrient,paralytic_shellfish_poisoning,12
+pyrodinium bahamense,stx,12
+alexandrium,gene expression,11
+alexandrium,harmful algal bloom,11
+alexandrium,phosphate,11
+alexandrium,salinity,11
+alexandrium fundyense,paralytic_shellfish_poisoning,11
+alexandrium fundyense,stx,11
+alexandrium ostenfeldii,dinoflagellate,11
+biosynthesis,sxta,11
+bloom,harmful algal bloom,11
+cyanobacteria,sxta,11
+dinoflagellate,gene expression,11
+dinoflagellate,nutrients,11
+dinoflagellate,phylogeny,11
+nitrate,nitrogen,11
+nitrate,toxin production,11
+nitrogen,phosphorus,11
+nitrogen,toxicity,11
+salinity,temperature,11
+alexandrium,nutrients,10
+anabaena,cyanobacteria,10
+anabaena,dinoflagellate,10
+biosynthesis,saxitoxin biosynthesis,10
+biosynthesis,toxin biosynthesis,10
+bloom,pyrodinium bahamense,10
+dinoflagellate,lc_ms,10
+light,temperature,10
+paralytic_shellfish_poisoning,sxta,10
+phylogeny,saxitoxin,10
+saxitoxin,saxitoxin biosynthesis,10
+alexandrium,evolution,9
+alexandrium,phylogeny,9
+alexandrium ostenfeldii,paralytic_shellfish_poisoning,9
+cyanobacteria,phylogenetic,9
+dinoflagellate,phosphate,9
+dinoflagellate,phosphorus,9
+dinoflagellate,saxitoxin biosynthesis,9
+dinoflagellate,toxin biosynthesis,9
+evolution,paralytic_shellfish_poisoning,9
+light,toxicity,9
+mass_spectrometry,stx,9
+nutrient,nutrients,9
+nutrient,salinity,9
+phosphate,toxin production,9
+salinity,saxitoxin,9
+salinity,toxicity,9
+alexandrium,toxin biosynthesis,8
+alexandrium catenella,toxicity,8
+alexandrium ostenfeldii,saxitoxin,8
+alexandrium tamarense,nitrate,8
+anabaena,saxitoxin,8
+hplc,mass_spectrometry,8
+lc_ms,paralytic_shellfish_poisoning,8
+lc_ms,saxitoxin,8
+phylogenetic,toxicity,8
+alexandrium,alexandrium tamiyavanichii,7
+alexandrium,saxitoxin biosynthesis,7
+alexandrium ostenfeldii,toxicity,7
+alexandrium tamarense,regulation,7
+alexandrium tamiyavanichii,dinoflagellate,7
+aphanizomenon,dinoflagellate,7
+aphanizomenon,saxitoxin,7
+biosynthesis,evolution,7
