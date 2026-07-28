@@ -130,7 +130,7 @@ STX-LBD/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/STX-LBD.git
+git clone https://github.com/buharilawan20-prog/STX-LBD.git
 cd STX-LBD
 ```
 
@@ -213,7 +213,7 @@ Sangmyung University
 
 Seoul, Republic of Korea
 
-Email: YOUR_EMAIL
+Email: buharilawan20@gmail.com
 
 ---
 
