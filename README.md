@@ -1,7 +1,7 @@
 # 🧬 STX-LBD Explorer
 
 **AI-powered Literature-Based Discovery for Saxitoxin Biosynthesis**
-
+[![DOI](https://zenodo.org/badge/1313561249.svg)](https://doi.org/10.5281/zenodo.21640517)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
 [![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
@@ -16,7 +16,6 @@ The application accompanies the manuscript:
 > *(Manuscript under review)*
 
 ---
-[![DOI](https://zenodo.org/badge/1313561249.svg)](https://doi.org/10.5281/zenodo.21640517)
 
 ## Features
 
