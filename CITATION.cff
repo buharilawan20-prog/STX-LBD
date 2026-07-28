@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: STX-LBD Explorer
+message: >
+  If you use this software, please cite it using the metadata below.
+type: software
+
+authors:
+  - family-names: Muhammad
+    given-names: Buhari Lawan
+
+title: STX-LBD Explorer
+
+version: 1.0.0
+
+date-released: 2026-07-28
+
+repository-code: https://github.com/buharilawan20-prog/STX-LBD
+
+license: MIT
+
+keywords:
+  - literature-based discovery
+  - saxitoxin
+  - harmful algal blooms
+  - knowledge graph
+  - AI
+  - machine learning
