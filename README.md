@@ -16,6 +16,7 @@ The application accompanies the manuscript:
 > *(Manuscript under review)*
 
 ---
+[![DOI](https://zenodo.org/badge/1313561249.svg)](https://doi.org/10.5281/zenodo.21640517)
 
 ## Features
 
