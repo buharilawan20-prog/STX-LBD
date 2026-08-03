@@ -1,8 +1,0 @@
-paper_id,year,title,error
-STX_DOC_000001,2024.0,Polyphyletic origin of saxitoxin biosynthesis genes in the marine dinoflagellate Alexandrium revealed by comparative transcriptomics.,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=240)"
-STX_DOC_000002,2025.0,Transcriptomic comparison unveils saxitoxin biosynthesis genes in the marine dinoflagellate Gymnodinium catenatum.,"Expecting ',' delimiter: line 1 column 3521 (char 3520)"
-STX_DOC_000003,2020.0,Comparative transcriptomics of toxin synthesis genes between the non-toxin producing dinoflagellate Cochlodinium polykrikoides and toxigenic Alexandrium pacificum.,"Expecting ',' delimiter: line 1 column 17034 (char 17033)"
-STX_DOC_000004,2016.0,Gene expression in the biosynthesis of Paralytic Shellfish Poisoning (PSP) toxins in dinoflagellates: a mini review,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=240)"
-STX_DOC_000007,2015.0,Transport of saxitoxin (stx) and its analogues in filamentous freshwater cyanobacteria,"HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=240)"
-STX_DOC_000008,,Paralytic Shellfish Toxin production in Alexandrium minutum (Dinophyceae): insights from omics integration using toxigenic and non-toxigenic recombinant progeny,"Expecting ',' delimiter: line 1 column 319 (char 318)"
-STX_DOC_000009,2010.0,Neurotoxic alkaloids: saxitoxin and its analogs.,"Expecting ',' delimiter: line 1 column 38611 (char 38610)"
