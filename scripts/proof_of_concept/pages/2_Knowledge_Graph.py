@@ -20,11 +20,6 @@ if str(APP_DIR) not in sys.path:
 from query_engine import STXLBD
 from ui import apply_global_style, hero, render_sidebar, section
 
-st.set_page_config(
-    page_title="STX-LBD Knowledge Graph",
-    page_icon="🕸️",
-    layout="wide",
-)
 
 apply_global_style()
 render_sidebar()

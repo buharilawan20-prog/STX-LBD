@@ -1,45 +1,43 @@
+"""STX-LBD Explorer home page."""
 
 import streamlit as st
 
-from ui import apply_global_style, hero, render_sidebar, section
-
-
-# ============================================================
-# PAGE CONFIGURATION
-# ============================================================
-
-st.set_page_config(
-    page_title="STX-LBD Explorer",
-    page_icon="🧬",
-    layout="wide",
-    initial_sidebar_state="expanded",
+from ui import (
+    apply_global_style,
+    footer,
+    hero,
+    module_card,
+    render_sidebar,
+    section,
 )
+
+
+# ---------------------------------------------------------------------
+# Shared UI
+# ---------------------------------------------------------------------
 
 apply_global_style()
 render_sidebar()
 
 
-# ============================================================
-# HERO
-# ============================================================
+# ---------------------------------------------------------------------
+# Hero
+# ---------------------------------------------------------------------
 
 hero(
     "STX-LBD Explorer",
-    "An AI-guided literature-based discovery platform for exploring predicted "
-    "biological relationships in marine saxitoxin research. Search AI-ranked "
-    "hypotheses, inspect temporal validation evidence, explore semantic knowledge "
-    "graphs, and compare STX biology across dinoflagellates and cyanobacteria.",
+    (
+        "An interactive AI-assisted literature-based discovery environment "
+        "for exploring hypotheses, knowledge graphs, cross-taxa relationships, "
+        "and emerging discovery patterns in saxitoxin research."
+    ),
     home=True,
 )
 
-st.caption(
-    "STX-LBD Explorer · Research software accompanying the STX-LBD framework"
-)
 
-
-# ============================================================
-# PLATFORM MODULES
-# ============================================================
+# ---------------------------------------------------------------------
+# Platform
+# ---------------------------------------------------------------------
 
 section(
     "Explore the Platform",
@@ -47,266 +45,276 @@ section(
 )
 
 
-# ---------- Row 1 ------------------------------------------------------------
+# ================================================================
+# Row 1
+# ================================================================
 
-col1, col2, col3 = st.columns(3)
+left, right = st.columns(2, gap="medium")
 
-with col1:
-    with st.container(border=True):
-        st.subheader("🔍 Search Hypotheses")
-        st.write(
-            "Search AI-ranked biological relationships and inspect the evidence "
-            "supporting each predicted hypothesis."
+
+with left:
+
+    module_card(
+        "🔎",
+        "Search Hypotheses",
+        (
+            "Search AI-ranked biological relationships and inspect the "
+            "evidence supporting each predicted hypothesis."
+        ),
+        [
+            "AI-ranked hypotheses",
+            "Biological interpretation",
+            "Temporal validation status",
+            "Supporting post-2015 literature",
+            "Bridge-node and model evidence",
+        ],
+    )
+
+    if st.button(
+        "Open Hypothesis Search →",
+        key="home_search",
+        type="primary",
+        use_container_width=True,
+    ):
+        st.switch_page(
+            st.session_state["_stxlbd_pages"]["search"]
         )
-        st.markdown(
-            """
-            ✓ AI-ranked hypotheses  
-            ✓ Biological interpretation  
-            ✓ Temporal validation status  
-            ✓ Supporting post-2015 literature  
-            ✓ Bridge-node and model evidence
-            """
-        )
-
-        if st.button(
-            "Open Hypothesis Search →",
-            key="open_search",
-            use_container_width=True,
-            type="primary",
-        ):
-            st.switch_page("pages/1_Search.py")
 
 
-with col2:
-    with st.container(border=True):
-        st.subheader("🕸️ Knowledge Graph")
-        st.write(
+with right:
+
+    module_card(
+        "🕸️",
+        "Knowledge Graph",
+        (
             "Explore semantic relationships among genes, toxins, taxa, "
             "environmental factors, biological processes, and detection methods."
-        )
-        st.markdown(
-            """
-            ✓ Interactive semantic network  
-            ✓ Node-centered exploration  
-            ✓ Entity-type filtering  
-            ✓ Connected hypotheses  
-            ✓ Graph exports
-            """
-        )
+        ),
+        [
+            "Interactive semantic network",
+            "Node-centered exploration",
+            "Entity-type filtering",
+            "Connected hypotheses",
+            "Graph exports",
+        ],
+    )
 
-        if st.button(
-            "Open Knowledge Graph →",
-            key="open_graph",
-            use_container_width=True,
-        ):
-            st.switch_page("pages/2_Knowledge_Graph.py")
-
-
-with col3:
-    with st.container(border=True):
-        st.subheader("🧬 Cross-Taxa Explorer")
-        st.write(
-            "Compare literature-derived STX biology between dinoflagellates "
-            "and cyanobacteria."
-        )
-        st.markdown(
-            """
-            ✓ Shared biological relationships  
-            ✓ Lineage-specific associations  
-            ✓ Transfer/convergence signals  
-            ✓ Entity-level comparison  
-            ✓ Shared biology network
-            """
+    if st.button(
+        "Open Knowledge Graph →",
+        key="home_kg",
+        use_container_width=True,
+    ):
+        st.switch_page(
+            st.session_state["_stxlbd_pages"]["knowledge_graph"]
         )
 
-        if st.button(
-            "Open Cross-Taxa Explorer →",
-            key="open_cross_taxa",
-            use_container_width=True,
-        ):
-            st.switch_page("pages/3_Cross_Taxa.py")
+
+# ================================================================
+# Row 2
+# ================================================================
+
+left, right = st.columns(2, gap="medium")
 
 
-# ---------- Row 2 ------------------------------------------------------------
+with left:
 
-col4, col5 = st.columns(2)
+    module_card(
+        "🧬",
+        "Cross-Taxa Explorer",
+        (
+            "Compare dinoflagellate and cyanobacterial semantic knowledge "
+            "graphs to investigate shared and lineage-specific relationships."
+        ),
+        [
+            "Shared biological relationships",
+            "Lineage-specific associations",
+            "Cross-taxa transfer/convergence signals",
+            "Entity-level comparison",
+            "Shared biology network",
+        ],
+    )
 
-with col4:
-    with st.container(border=True):
-        st.subheader("📊 Discovery Analytics")
-        st.write(
-            "Explore interactive summaries of the corpus, knowledge graphs, "
-            "hypothesis landscape, model performance, and temporal validation."
-        )
-        st.markdown(
-            """
-            ✓ Corpus and KG analytics  
-            ✓ Hypothesis-class distribution  
-            ✓ Validated vs unvalidated predictions  
-            ✓ AI vs Node2Vec performance  
-            ✓ Cross-taxa analytics
-            """
-        )
-
-        if st.button(
-            "Open Discovery Analytics →",
-            key="open_analytics",
-            use_container_width=True,
-        ):
-            st.switch_page("pages/4_Discovery_Analytics.py")
-
-
-with col5:
-    with st.container(border=True):
-        st.subheader("📖 Documentation")
-        st.write(
-            "Review the STX-LBD methodology, interpretation guidance, "
-            "data availability, software resources, and citation information."
-        )
-        st.markdown(
-            """
-            ✓ Framework overview  
-            ✓ Methods and workflow  
-            ✓ Interpretation guidance  
-            ✓ GitHub and Zenodo resources  
-            ✓ Citation information
-            """
+    if st.button(
+        "Open Cross-Taxa Explorer →",
+        key="home_cross_taxa",
+        use_container_width=True,
+    ):
+        st.switch_page(
+            st.session_state["_stxlbd_pages"]["cross_taxa"]
         )
 
-        if st.button(
-            "Open Documentation →",
-            key="open_documentation",
-            use_container_width=True,
-        ):
-            st.switch_page("pages/5_Documentation.py")
+
+with right:
+
+    module_card(
+        "📊",
+        "Discovery Analytics",
+        (
+            "Examine corpus statistics, hypothesis classes, temporal validation, "
+            "AI performance, and discovery patterns."
+        ),
+        [
+            "Corpus and graph statistics",
+            "Validated vs unvalidated hypotheses",
+            "AI model performance",
+            "Temporal discovery patterns",
+            "Cross-taxa analytics",
+        ],
+    )
+
+    if st.button(
+        "Open Discovery Analytics →",
+        key="home_analytics",
+        use_container_width=True,
+    ):
+        st.switch_page(
+            st.session_state["_stxlbd_pages"]["analytics"]
+        )
 
 
-# ============================================================
-# ABOUT STX-LBD
-# ============================================================
+# ================================================================
+# Row 3 — Documentation
+# ================================================================
+
+left, right = st.columns(2, gap="medium")
+
+
+with left:
+
+    module_card(
+        "📘",
+        "Documentation",
+        (
+            "Learn how STX-LBD was constructed, how predictions should be "
+            "interpreted, and how to use the Explorer responsibly."
+        ),
+        [
+            "Platform overview",
+            "Methodological guidance",
+            "Evidence definitions",
+            "Interpretation guidance",
+            "Responsible-use notes",
+        ],
+    )
+
+    if st.button(
+        "Open Documentation →",
+        key="home_documentation",
+        use_container_width=True,
+    ):
+        st.switch_page(
+            st.session_state["_stxlbd_pages"]["documentation"]
+        )
+
+
+with right:
+
+    st.markdown(
+        """
+<div class="info-card">
+<h3>From Literature to Discovery</h3>
+<p>
+STX-LBD transforms fragmented literature into structured biological
+knowledge and uses graph-based and supervised AI approaches to prioritize
+potentially informative biological relationships.
+</p>
+<p>
+The Explorer makes these predictions accessible through interactive
+hypothesis search, semantic graph exploration, cross-taxa comparison,
+supporting literature, and discovery analytics.
+</p>
+</div>
+""",
+        unsafe_allow_html=True,
+    )
+
+
+# ---------------------------------------------------------------------
+# About STX-LBD
+# ---------------------------------------------------------------------
 
 section(
     "About STX-LBD",
-    "From fragmented literature to explainable biological hypotheses.",
+    (
+        "A literature-based discovery framework for transforming fragmented "
+        "saxitoxin research into structured, testable biological hypotheses."
+    ),
 )
 
-with st.container(border=True):
-    st.markdown(
-        """
-        **STX-LBD** is an artificial intelligence-guided literature-based discovery
-        framework developed for marine saxitoxin research. It transforms scientific
-        literature into structured biological knowledge using semantic entity mining,
-        knowledge graphs, graph representation learning, supervised machine learning,
-        strict temporal validation, and cross-taxa knowledge transfer.
-
-        The Explorer provides an interactive interface to investigate the resulting
-        hypotheses and semantic relationships. Predictions are intended to support
-        hypothesis generation and research prioritization rather than replace
-        experimental validation.
-        """
-    )
-
-
-# ============================================================
-# ABOUT THE DEVELOPER
-# ============================================================
-
-section(
-    "About the Developer",
-    "Research and development behind the STX-LBD platform.",
-)
-
-with st.container(border=True):
-    about_col1, about_col2 = st.columns([1, 2])
-
-    with about_col1:
-        st.markdown(
-            """
-            ### Buhari Lawan Muhammad
-
-            **Marine biologist · Molecular ecologist · AI-assisted discovery researcher**
-            """
-        )
-
-    with about_col2:
-        st.markdown(
-            """
-            Buhari Lawan Muhammad develops research at the intersection of marine
-            molecular ecology, harmful algal bloom biology, marine toxin research,
-            evolutionary genomics, and artificial intelligence. His work uses
-            molecular, transcriptomic, bioinformatic, and AI-guided approaches to
-            investigate saxitoxin biosynthesis, toxin-producing dinoflagellates,
-            environmental drivers, and biological knowledge discovery.
-
-            STX-LBD was developed as an open research framework for converting the
-            rapidly expanding marine saxitoxin literature into structured,
-            testable biological hypotheses.
-            """
-        )
-
-
-# ============================================================
-# CITATION / RESOURCES
-# ============================================================
-
-section(
-    "Citation & Resources",
-    "Please cite the STX-LBD work when using the framework, data, or Explorer.",
-)
-
-with st.container(border=True):
-    st.markdown(
-        """
-        **Suggested citation**
-
-        **Buhari L. M. et al.** *STX-LBD: An AI-Guided Literature-Based Discovery
-        Framework for Predicting Future Discoveries in Marine Saxitoxin Research.*
-
-        *Manuscript currently under peer review. Update the citation after publication.*
-        """
-    )
-
-    resource_col1, resource_col2 = st.columns(2)
-
-    with resource_col1:
-        st.link_button(
-            "GitHub Repository",
-            "https://github.com/buharilawan20-prog/STX-LBD",
-            use_container_width=True,
-        )
-
-    with resource_col2:
-        st.link_button(
-            "Zenodo Archive",
-            "https://doi.org/10.5281/zenodo.21640517",
-            use_container_width=True,
-        )
-
-
-# ============================================================
-# RESPONSIBLE USE
-# ============================================================
-
-st.info(
-    "STX-LBD is a hypothesis-generation and prioritization resource. "
-    "A temporally validated relationship indicates subsequent representation "
-    "in post-2015 literature and should not automatically be interpreted as "
-    "experimental proof of causality."
+st.write(
+    """
+STX-LBD integrates semantic knowledge graphs, graph representation learning,
+supervised machine learning, strict temporal validation, and cross-taxa
+knowledge transfer. The framework is designed to support scientific
+hypothesis generation rather than replace experimental or field validation.
+"""
 )
 
 
-# ============================================================
-# FOOTER
-# ============================================================
+# ---------------------------------------------------------------------
+# About Developer
+# ---------------------------------------------------------------------
+
+section("About the Developer")
 
 st.markdown(
     """
-    <div class="footer">
-        <strong>STX-LBD Explorer</strong><br>
-        Developed by Buhari Lawan Muhammad · Institute of Natural Science,
-        Sangmyung University<br>
-        AI-guided literature-based discovery for marine saxitoxin research
-    </div>
-    """,
-    unsafe_allow_html=True,
+**Buhari Lawan Muhammad**
+
+Research interests span marine molecular ecology, harmful algal bloom biology,
+marine toxin research, evolutionary genomics, bioinformatics and
+transcriptomics, and AI-assisted scientific discovery.
+
+**Institute of Natural Science, Sangmyung University**  
+Seoul, Republic of Korea
+"""
 )
+
+
+# ---------------------------------------------------------------------
+# Citation and resources
+# ---------------------------------------------------------------------
+
+section(
+    "Citation & Resources",
+    "Project resources and reproducibility information.",
+)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown(
+        """
+**STX-LBD**
+
+Buhari L. M. et al.  
+*STX-LBD: An AI-Guided Literature-Based Discovery Framework for Marine
+Saxitoxin Research.*
+
+**GitHub**
+
+https://github.com/buharilawan20-prog/STX-LBD
+"""
+    )
+
+with col2:
+    st.markdown(
+        """
+**Zenodo**
+
+DOI: `10.5281/zenodo.21640517`
+
+**Responsible use**
+
+AI-ranked relationships represent hypotheses and literature-derived signals.
+They should not be interpreted as causal biological evidence without
+independent experimental, field, or computational validation.
+"""
+    )
+
+
+# ---------------------------------------------------------------------
+# Footer
+# ---------------------------------------------------------------------
+
+footer()

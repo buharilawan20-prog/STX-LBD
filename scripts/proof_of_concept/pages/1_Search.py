@@ -27,11 +27,6 @@ from ui import apply_global_style, hero, render_sidebar, section
 # PAGE CONFIG
 # ============================================================
 
-st.set_page_config(
-    page_title="STX-LBD Hypothesis Search",
-    page_icon="🔍",
-    layout="wide",
-)
 
 apply_global_style()
 render_sidebar()
