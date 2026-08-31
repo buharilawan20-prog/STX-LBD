@@ -69,3 +69,14 @@ cache/
 .Rhistory
 .RData
 .Rproj.user/
+
+# Windows metadata
+*:Zone.Identifier
+
+# Local STX-LBD development backups
+scripts/proof_of_concept_backup_*/
+scripts/proof_of_concept_before_*/
+scripts/proof_of_concept/app_before_*.py
+scripts/proof_of_concept/app_*backup.py
+FINAL_WORKSPACE/proof_of_concept/*_before_*.csv
+scripts/proof_of_concept/pages/*_before_*.py
