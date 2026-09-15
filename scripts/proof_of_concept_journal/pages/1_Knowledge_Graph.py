@@ -160,38 +160,50 @@ def load_edges():
     )
 
     if source_type_col:
+
         out["source_type"] = (
             df[source_type_col]
             .fillna("ENTITY")
             .astype(str)
         )
+
     else:
+
         out["source_type"] = "ENTITY"
 
     if target_type_col:
+
         out["target_type"] = (
             df[target_type_col]
             .fillna("ENTITY")
             .astype(str)
         )
+
     else:
+
         out["target_type"] = "ENTITY"
 
     if weight_col:
+
         out["weight"] = pd.to_numeric(
             df[weight_col],
             errors="coerce",
         ).fillna(1)
+
     else:
+
         out["weight"] = 1
 
     if relation_col:
+
         out["relation"] = (
             df[relation_col]
             .fillna("semantic relationship")
             .astype(str)
         )
+
     else:
+
         out["relation"] = "semantic relationship"
 
     out = out[
@@ -205,6 +217,7 @@ def load_edges():
 
 
 try:
+
     edges = load_edges()
 
 except Exception as exc:
@@ -220,6 +233,7 @@ except Exception as exc:
 G = nx.Graph()
 
 node_types = {}
+
 
 for _, row in edges.iterrows():
 
@@ -242,9 +256,14 @@ for _, row in edges.iterrows():
         row["relation"]
     )
 
-    if G.has_edge(source, target):
+    if G.has_edge(
+        source,
+        target,
+    ):
 
-        G[source][target]["weight"] += weight
+        G[source][target][
+            "weight"
+        ] += weight
 
     else:
 
@@ -262,15 +281,18 @@ for _, row in edges.iterrows():
 
 m1, m2, m3 = st.columns(3)
 
+
 m1.metric(
     "Historical nodes",
     f"{G.number_of_nodes():,}",
 )
 
+
 m2.metric(
     "Historical edges",
     f"{G.number_of_edges():,}",
 )
+
 
 m3.metric(
     "Literature period",
@@ -285,7 +307,10 @@ st.divider()
 # ENTITY SEARCH
 # ============================================================
 
-st.subheader("Explore an entity")
+st.subheader(
+    "Explore an entity"
+)
+
 
 all_nodes = sorted(
     list(G.nodes()),
@@ -332,7 +357,10 @@ if query.strip():
             "Matching entities",
             matches,
             format_func=lambda x: (
-                str(x).replace("_", " ")
+                str(x).replace(
+                    "_",
+                    " ",
+                )
             ),
         )
 
@@ -461,6 +489,7 @@ def render_network(
         directed=False,
     )
 
+
     # --------------------------------------------------------
     # ADD NODES
     # --------------------------------------------------------
@@ -498,7 +527,10 @@ def render_network(
 
         display_name = (
             str(node)
-            .replace("_", " ")
+            .replace(
+                "_",
+                " ",
+            )
         )
 
         net.add_node(
@@ -570,10 +602,7 @@ def render_network(
 
 
     # --------------------------------------------------------
-    # PHYSICS
-    #
-    # The graph is allowed to stabilize initially.
-    # JavaScript below then disables physics completely.
+    # PHYSICS AND INTERACTION
     # --------------------------------------------------------
 
     net.set_options(
@@ -637,10 +666,7 @@ def render_network(
 
 
     # --------------------------------------------------------
-    # FREEZE GRAPH AFTER STABILIZATION
-    #
-    # This prevents the continuous shaking seen with normal
-    # PyVis force-directed networks.
+    # FREEZE NETWORK AFTER STABILIZATION
     # --------------------------------------------------------
 
     freeze_script = """
@@ -674,10 +700,10 @@ def render_network(
             );
 
             /*
-             * Safety fallback:
-             * Even if the stabilization event is not emitted,
-             * stop physics after several seconds.
+             * Fallback: stop physics after 4.5 seconds
+             * even if stabilization event is not emitted.
              */
+
             setTimeout(
                 function () {
 
@@ -716,7 +742,7 @@ def render_network(
 
 
     # --------------------------------------------------------
-    # TEMPORARY HTML FILE
+    # WRITE TEMPORARY HTML
     # --------------------------------------------------------
 
     with tempfile.NamedTemporaryFile(
@@ -736,7 +762,7 @@ def render_network(
 
 
     # --------------------------------------------------------
-    # DISPLAY
+    # DISPLAY NETWORK
     # --------------------------------------------------------
 
     with open(
@@ -753,16 +779,13 @@ def render_network(
 
 
 # ============================================================
-# SELECTED ENTITY
+# SELECTED ENTITY VIEW
 # ============================================================
 
 if selected:
 
-    # --------------------------------------------------------
-    # FIND HISTORICAL NEIGHBORS
-    # --------------------------------------------------------
-
     neighbors = []
+
 
     for neighbor in G.neighbors(
         selected
@@ -787,11 +810,10 @@ if selected:
 
 
     # Strongest historical relationships first.
+
     neighbors = sorted(
         neighbors,
-        key=lambda x: (
-            x[1]
-        ),
+        key=lambda x: x[1],
         reverse=True,
     )
 
@@ -832,7 +854,10 @@ if selected:
         st.metric(
             "Selected entity",
             str(selected)
-            .replace("_", " "),
+            .replace(
+                "_",
+                " ",
+            ),
         )
 
 
@@ -996,41 +1021,13 @@ st.markdown(
 
 
 legend_items = [
-
-    (
-        "Toxin",
-        "#D95F5F",
-    ),
-
-    (
-        "SXT gene",
-        "#6F63B6",
-    ),
-
-    (
-        "Environmental factor",
-        "#4D8F72",
-    ),
-
-    (
-        "Biological process",
-        "#D9A13B",
-    ),
-
-    (
-        "Dinoflagellate taxon",
-        "#3D78A8",
-    ),
-
-    (
-        "Cyanobacterial taxon",
-        "#5B9AA0",
-    ),
-
-    (
-        "Detection method",
-        "#8A7B6A",
-    ),
+    ("🔴", "Toxin"),
+    ("🟣", "SXT gene"),
+    ("🟢", "Environmental factor"),
+    ("🟠", "Biological process"),
+    ("🔵", "Dinoflagellate taxon"),
+    ("🟦", "Cyanobacterial taxon"),
+    ("🟤", "Detection method"),
 ]
 
 
@@ -1040,8 +1037,8 @@ legend_cols = st.columns(
 
 
 for i, (
+    marker,
     label,
-    color,
 ) in enumerate(
     legend_items
 ):
@@ -1051,31 +1048,7 @@ for i, (
     ]:
 
         st.markdown(
-            f"""
-            <div style="
-                display:flex;
-                align-items:center;
-                margin-bottom:8px;
-            ">
-
-                <span style="
-                    display:inline-block;
-                    width:12px;
-                    height:12px;
-                    border-radius:50%;
-                    background:{color};
-                    margin-right:7px;
-                    border:1px solid #cccccc;
-                ">
-                </span>
-
-                <span>
-                    {label}
-                </span>
-
-            </div>
-            """,
-            unsafe_allow_html=True,
+            f"{marker} **{label}**"
         )
 
 
@@ -1089,12 +1062,14 @@ st.markdown(
     "### About this graph"
 )
 
+
 st.write(
     "The displayed network is derived exclusively from the "
     "historical dinoflagellate STX semantic knowledge graph "
     "constructed from literature available through 2015. "
     "Post-2015 literature is not used to construct this graph."
 )
+
 
 st.caption(
     "Node size reflects connectivity within the displayed "
